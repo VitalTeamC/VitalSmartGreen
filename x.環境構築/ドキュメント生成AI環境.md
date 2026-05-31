@@ -323,6 +323,7 @@ Gemini API Key : Google AI Studioで取得したAPIキーを入力する。
 
 #### ①　sshキーを取得する。
 
+git --version  
 git config --global user.name VitalTeamC  
 git config --global user.email GitHub用のEmailアドレスを入力する。  
 ssh-keygen -t rsa  
