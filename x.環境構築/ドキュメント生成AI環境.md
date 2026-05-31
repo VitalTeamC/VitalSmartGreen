@@ -295,6 +295,7 @@ Gemini API Key : Google AI Studioで取得したAPIキーを入力する。
 ### ①　GitのWebサイトを表示する。
 「Install for Windows」をクリックする。
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/01.png)
+「Git for windwos/x64 Setup.」をクリックする。
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/02.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/03.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/04.png)
@@ -303,12 +304,10 @@ Gemini API Key : Google AI Studioで取得したAPIキーを入力する。
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/06.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/07.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/08.png)
-![ログイン画面](./⑤VSCode_GitHub/Gitインストール/09.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/10.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/11.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/12.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/13.png)
-![ログイン画面](./⑤VSCode_GitHub/Gitインストール/14.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/15.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/16.png)
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/17.png)
@@ -324,10 +323,10 @@ Gemini API Key : Google AI Studioで取得したAPIキーを入力する。
 
 #### ①　sshキーを取得する。
 
-git config --global user.name VITAL
-git config --global user.email GitHub用のEmailアドレスを入力する。
-ssh-keygen -t rsa
-clip < .ssh/id_rsa.pub　　　　　← Keyがクリップボードにコピーされる。
+git config --global user.name VitalTeamC  
+git config --global user.email GitHub用のEmailアドレスを入力する。  
+ssh-keygen -t rsa  
+clip < .ssh/id_rsa.pub　　　　　← Keyがクリップボードにコピーされる。  
 ![ログイン画面](./⑤VSCode_GitHub/sshキー取得/01.png)
 ![ログイン画面](./⑤VSCode_GitHub/sshキー取得/02.png)
 
@@ -335,9 +334,9 @@ clip < .ssh/id_rsa.pub　　　　　← Keyがクリップボードにコピー
 「New SSH key」をクリックする。
 ![ログイン画面](./⑤VSCode_GitHub/sshキー取得/03.png)
 
-Title：　任意だが、利用者が特定できる名称とする。
-Key type：　変更なし
-Key：　クリップボードからCtrl + vでペーストする。
+Title：　任意だが、利用者が特定できる名称とする。  
+Key type：　変更なし  
+Key：　クリップボードからCtrl + vでペーストする。  
 入力後に「Add SSH Key」をクリックする。
 ![ログイン画面](./⑤VSCode_GitHub/sshキー取得/04.png)
 ![ログイン画面](./⑤VSCode_GitHub/sshキー取得/06.png)
