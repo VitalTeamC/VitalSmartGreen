@@ -15,3 +15,8 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:VitalTeamC/VitalSmartGreen.git
    7b96616..2e98d56  HEAD -> main
 PS E:\取り組み\VitalSmartGreen> 
+
+◆CLINEが表示されない。左のアイコンから消えた。
+Ctrl + Shift + P
+Cline: Open Cline
+でパネルが表示される。

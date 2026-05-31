@@ -55,9 +55,12 @@
     - [③　GoogleAPIを設定する。](#googleapiを設定する)
     - [⑤　設定完了](#設定完了)
   - [VSCodeとGitHubの連携設定](#vscodeとgithubの連携設定)
-    - [①　sshキーを取得する。](#sshキーを取得する)
-    - [②　sshキーをGitHubに設定する。](#sshキーをgithubに設定する)
-    - [③　ssh接続ができているか確認する。](#ssh接続ができているか確認する)
+    - [１．Gitのインストール](#１gitのインストール)
+    - [①　GitのWebサイトを表示する。](#gitのwebサイトを表示する)
+    - [２．sshキーの取得と設定](#２sshキーの取得と設定)
+      - [①　sshキーを取得する。](#sshキーを取得する)
+      - [②　sshキーをGitHubに設定する。](#sshキーをgithubに設定する)
+      - [③　ssh接続ができているか確認する。](#ssh接続ができているか確認する)
 
 ---
 
@@ -287,36 +290,68 @@ Gemini API Key : Google AI Studioで取得したAPIキーを入力する。
 
 ## VSCodeとGitHubの連携設定
 
-### ①　sshキーを取得する。
+### １．Gitのインストール
+
+### ①　GitのWebサイトを表示する。
+「Install for Windows」をクリックする。
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/01.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/02.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/03.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/04.png)
+ダウンロードしたファイルを実行する。
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/05.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/06.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/07.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/08.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/09.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/10.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/11.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/12.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/13.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/14.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/15.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/16.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/17.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/18.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/19.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/20.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/21.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/22.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/23.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/24.png)
+
+### ２．sshキーの取得と設定
+
+#### ①　sshキーを取得する。
 
 git config --global user.name VITAL
 git config --global user.email GitHub用のEmailアドレスを入力する。
 ssh-keygen -t rsa
 clip < .ssh/id_rsa.pub　　　　　← Keyがクリップボードにコピーされる。
-![ログイン画面](./⑤VSCode_GitHub/01.png)
-![ログイン画面](./⑤VSCode_GitHub/02.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/01.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/02.png)
 
-### ②　sshキーをGitHubに設定する。
+#### ②　sshキーをGitHubに設定する。
 「New SSH key」をクリックする。
-![ログイン画面](./⑤VSCode_GitHub/03.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/03.png)
 
 Title：　任意だが、利用者が特定できる名称とする。
 Key type：　変更なし
 Key：　クリップボードからCtrl + vでペーストする。
 入力後に「Add SSH Key」をクリックする。
-![ログイン画面](./⑤VSCode_GitHub/04.png)
-![ログイン画面](./⑤VSCode_GitHub/06.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/04.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/06.png)
 
 パスワード（Vital標準）を入力してConfirmをクリックする。
-![ログイン画面](./⑤VSCode_GitHub/07.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/07.png)
 
 設定完了
-![ログイン画面](./⑤VSCode_GitHub/08.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/08.png)
 
-### ③　ssh接続ができているか確認する。
+#### ③　ssh接続ができているか確認する。
 
 ssh -T git@github.com
-![ログイン画面](./⑤VSCode_GitHub/09.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得/09.png)
 
 
 
