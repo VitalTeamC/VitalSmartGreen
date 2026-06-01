@@ -370,44 +370,56 @@ https://git-scm.com/
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/23.png)
 ・インストール完了
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/24.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/25.png)
 
 ### ２．sshキーの取得と設定
 
 #### ①　sshキーを取得する。
 
+コマンドプロンプトを起動し以下を入力する。
+
 git --version  
+
 git config --global user.name VitalTeamC  
+
 git config --global user.email GitHub用のEmailアドレスを入力する。  
-ssh-keygen -t rsa  
+
+ssh-keygen -t rsa   ← エンターキーを数回入力する。
+
 clip < .ssh/id_rsa.pub　　　　　← Keyがクリップボードにコピーされる。  
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/01.png)
+
 ![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/02.png)
 
 #### ②　sshキーをGitHubに設定する。
 「New SSH key」をクリックする。
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/03.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/03_1.png)
 
 Title：　任意だが、利用者が特定できる名称とする。  
 Key type：　変更なし  
 Key：　クリップボードからCtrl + vでペーストする。  
 入力後に「Add SSH Key」をクリックする。
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/04.png)
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/06.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/04_1.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/06_1.png)
 
 パスワード（Vital標準）を入力してConfirmをクリックする。
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/07.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/07_1.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/07_2.png)
 
 設定完了
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/08.png)
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/08_1.png)
 
 #### ③　ssh接続ができているか確認する。
 
+コマンドプロンプトにて以下を入力する。
+
 ssh -T git@github.com
-![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/09.png)
+
+![ログイン画面](./⑤VSCode_GitHub/sshキー取得と登録/09_1.png)
 
 ### ３．リポジトリを開く
 
 #### ①　ソース管理画面から「リポジトリをクローンする」をクリックする。
+以下の様に
 ![ログイン画面](./⑤VSCode_GitHub/リポジトリを開く/01.png)
 #### ②　VSCode上部の「GitHubから複製」をクリックする。
 ![ログイン画面](./⑤VSCode_GitHub/リポジトリを開く/02.png)
