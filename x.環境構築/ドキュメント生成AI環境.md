@@ -337,7 +337,9 @@ https://git-scm.com/
 ・ダウンロードしたファイルを実行する。
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/06.png)
 ・インストール先を指定する。（デフォルトでも問題ない）
-![ログイン画面](./⑤VSCode_GitHub/Gitインストール/07.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/07_1.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/07_2.png)
+![ログイン画面](./⑤VSCode_GitHub/Gitインストール/07_3.png)
 ・変更なし
 ![ログイン画面](./⑤VSCode_GitHub/Gitインストール/08.png)
 ・「Use Visual Studio Code as Git's default editor」を選択する。
